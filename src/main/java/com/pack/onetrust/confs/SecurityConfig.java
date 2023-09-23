@@ -36,7 +36,7 @@ public class SecurityConfig {
                 )
                 .formLogin(form -> form
                         .loginPage("/login")
-                        .defaultSuccessUrl("/gg", true)
+                        .defaultSuccessUrl("/profile", true)
                         .failureUrl("/login?error"));
         return http.build();
     }
