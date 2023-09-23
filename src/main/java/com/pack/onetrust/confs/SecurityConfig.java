@@ -30,6 +30,11 @@ public class SecurityConfig {
                                 "/css/main.css",
                                 "/css/reset.css",
                                 "/js/main.js",
+                                "/images/Emblem_of_Kyrgyzstan.svg",
+                                "/images/home-item-1.jpg",
+                                "/images/home-item-2.jpg",
+                                "/images/home-item-3.jpg",
+                                "/images/home-item-4.jpg",
                                 "/images/intro.jpg",
                                 "/login").permitAll()
                         .anyRequest().authenticated()

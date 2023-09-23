@@ -1,56 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Started template</title>
-		<link rel="stylesheet" href="/css/reset.css" />
-		<link rel="stylesheet" href="/css/main.css" />
-	</head>
-	<body>
-		<div class="wrapper">
-			<header class="header">
-				<div class="header__container">
-					<a href="#" class="logo">One trust</a>
-					<nav class="menu">
-						<div class="menu__body">
-							<ul class="menu__list">
-								<li><a href="#" class="menu__link">Главная</a></li>
-								<li><a href="#" class="menu__link">О Проекте</a></li>
-								<li><a href="#" class="menu__link">Контакты</a></li>
-								<li>
-									<button class="menu__button button"><a href="/login">Мой кабинет </a></button>
-								</li>
-							</ul>
-						</div>
-					</nav>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Started template</title>
+	<link rel="stylesheet" href="/css/reset.css" />
+	<link rel="stylesheet" href="/css/main.css" />
+</head>
+<body>
+<div class="wrapper">
+	<header class="header">
+		<div class="header__container">
+			<a data-goto=".home" href="#" class="header__logo">One trust</a>
+			<nav class="menu">
+				<div class="menu__body">
+					<ul class="menu__list">
+						<li><a data-goto=".home" href="#" class="menu__link">Главная</a></li>
+						<li><a data-goto=".about" href="#" class="menu__link">О Проекте</a></li>
+						<li><a data-goto=".contacts" href="#" class="menu__link">Контакты</a></li>
+						<li><a href="/login" class="menu__button button">Мой кабинет</a></li>
+					</ul>
 				</div>
-			</header>
-			<main class="page">
-        <section class="home">
-           <div class="home__container">
-              <div class="home__content">
-                <h1 class="home__title">Далеко-далеко за словесными горами в стране.</h1>
-                <p class="home__text">
-                  Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Строчка собрал эта снова взобравшись рукописи предложения реторический свой языкового вдали агентство текста одна, родного живет продолжил ты от всех моей.
-                </p>
-                <div class="home__buttons">
-                  <a href="" class="home__button button">Get started</a>
-                  <a href="" class="home__button button">Get started</a>
-                </div>
-                
-              </div>
-              <div class="home__image">
-                <img src="/images/intro.jpg" alt="">
-              </div>
-           </div>
-        </section>
-        <section class="about">
-          <div class="about__container"></div>
-        </section>
-      </main>
-			<footer class="footer"></footer>
+				<button class="menu__icon" type="button"><span></span></button>
+			</nav>
 		</div>
-		<script src="/js/main.js"></script>
-	</body>
+	</header>
+	<main class="page">
+		<section class="home">
+			<div class="home__container">
+				<div class="home__content">
+					<h1 class="home__title">Далеко-далеко за словесными горами в стране.</h1>
+					<div class="home__text">
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, aspernatur. Eum cum nobis recusandae asperiores minus, obcaecati aspernatur, nihil sed at voluptatibus aperiam suscipit aliquid perferendis aliquam molestias est accusamus?
+						</p>
+					</div>
+					<div class="home__buttons">
+						<a href="/login" class="home__button button button-bg">Приступить к оформлению</a>
+						<a href="#" class="home__button button">Перейти в телеграм</a>
+					</div>
+				</div>
+				<div class="home__images">
+					<div class="home__column">
+						<div class="home__item home__item-vertical"><img src="/images/home-item-1.jpg" alt="Image"></div>
+						<div class="home__item home__item-horizontal"><img src="/images/home-item-2.jpg" alt="Image"></div>
+					</div>
+					<div class="home__column">
+						<div class="home__item home__item-horizontal"><img src="/images/home-item-3.jpg" alt="Image"></div>
+						<div class="home__item home__item-vertical"><img src="/images/home-item-4.jpg" alt="Image"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="about">
+			<div class="about__container">
+				<h2 class="about__title">О Проекте</h2>
+				<div class="about__text">
+					Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Себя, то. Великий свою алфавит, города парадигматическая щеке текстами большой они свой имени продолжил, последний повстречался предупредила жизни курсивных собрал бросил даль рукопись буквоград приставка, букв которое возвращайся жаренные. Решила свой собрал реторический? Переписывается!
+				</div>
+			</div>
+		</section>
+
+		<section class="contacts">
+			<div class="contacts__container">
+				<h2 class="contacts__title">Наши контакты</h2>
+				<div class="contacts__column">
+					<h3 class="contacts__title-sub">Адрес</h3>
+					<address>Какой-то адрес</address>
+				</div>
+				<div class="contacts__column">
+					<h3 class="contacts__title-sub">Телефон</h3>
+					<a href="tel:+996757557557">0 757 55-75-57</a>
+					<h3 class="contacts__title-sub">Email</h3>
+					<a href="mailto:ebaletovse@pizdarulyam">ebaletovse@pizdarulyam</a>
+				</div>
+				<div class="contacts__column">
+					<h3 class="contacts__title-sub">Можете подписаться</h3>
+					<ul class="contacts__list">
+						<li><a href="#" class="contacts__list-link">A</a></li>
+						<li><a href="#" class="contacts__list-link">A</a></li>
+						<li><a href="#" class="contacts__list-link">A</a></li>
+						<li><a href="#" class="contacts__list-link">A</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</section>
+
+	</main>
+	<footer class="footer">
+		<a href="#">Все права защищены! 2023 &copy</a>
+	</footer>
+</div>
+<script src="/js/main.js"></script>
+</body>
 </html>
