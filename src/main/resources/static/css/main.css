@@ -630,6 +630,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	padding-top: 65px;
+	padding-bottom: 25px
 }
 
 .trusted__title-big {
@@ -698,6 +699,11 @@ body {
 
 .profile__body>:not(:last-child) {
 	margin-bottom: 25px;
+}
+
+.profile__title {
+    font-size: 36px;
+    font-weight: 700;
 }
 
 .profile__buttons {
