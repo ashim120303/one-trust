@@ -2,9 +2,83 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Title</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-    Доверенное лицо
+<div class="trusted">
+    <h2 class="trusted__title-big">Оформление Доверенности</h2>
+    <div class="trusted__body">
+        <h3 class="trusted__title">
+            Получатель (ПОКУПАТЕЛЬ) <br>
+            <span>(Кто получает товар)</span>
+        </h3>
+        <form action="" class="trusted__form">
+            <label>
+                Покупатель
+                <input type="text">
+            </label>
+            <div class="trusted__form-block">
+                <label>
+                    ИНН
+                    <input type="text">
+                </label>
+                <label>
+                    КПП
+                    <input type="text">
+                </label>
+                <label>
+                    ОКЛО
+                    <input type="text">
+                </label>
+            </div>
+            <label>
+                Адрес
+                <input type="text">
+            </label>
+            <div class="trusted__form-block">
+                <label>
+                    Имя собственности
+                    <input type="text">
+                </label>
+                <label>
+                    Государственный номерной знак
+                    <input type="text">
+                </label>
+            </div>
+            <div class="trusted__form-block">
+                <label>
+                    Год выпуска
+                    <input type="text">
+                </label>
+                <label>
+                    Цвет
+                    <input type="text">
+                </label>
+            </div>
+            <div class="trusted__form-block">
+                <label>
+                    Кузов
+                    <input type="text">
+                </label>
+                <label>
+                    Идентификационный номер
+                    <input type="text">
+                </label>
+            </div>
+            <label>
+                Срок действия
+                <input type="date">
+            </label>
+            <div class="trusted__form-radion">
+                Право передоверенности
+                <label><input type="radio" value="Да"><span>Да</span></label>
+                <label><input type="radio" value="Нет" checked><span>Нет</span></label>
+            </div>
+        </form>
+    </div>
+</div>
 </body>
 </html>
