@@ -15,28 +15,28 @@
             Доверенное лицо <br>
             <span>(Кому доверяют)</span>
         </h3>
-        <form  th:action="@{/trusted}" th:object="${trusted}" method="post" class="trusted__form">
-            <label>Доверенное лицо ФИО<input type="text" name="trustedName"></label>
-            <label>Доверитель ФИО<input type="text" name="trusterName"></label>
+        <form  th:action="@{/trusted}" th:object="${trusted}" method="post" class="trusted__form" th:each="el : ${truster}">
+            <label>Доверенное лицо ФИО<input type="text" name="trustedName" th:text="${el.trustedName}"></label>
+            <label>Доверитель ФИО<input type="text" name="trusterName" th:text="${el.trusterName}"></label>
             <div class="trusted__form-block">
-                <label>ИНН<input type="text" name="inn"></label>
-                <label>КПП<input type="text" name="kpp"></label>
-                <label>ОКЛО<input type="text"name="oklo"></label>
+                <label>ИНН<input type="text" name="inn" th:text="inn"></label>
+                <label>КПП<input type="text" name="kpp" th:text="kpp"></label>
+                <label>ОКЛО<input type="text"name="oklo" th:text="oklo"></label>
             </div>
-            <label>Адрес<input type="text" name="address"></label>
+            <label>Адрес<input type="text" name="address" th:text="address"></label>
             <div class="trusted__form-block">
-                <label>Имя собственности<input type="text" name="name"></label>
-                <label>Государственный номерной знак<input type="text" name="number"></label>
-            </div>
-            <div class="trusted__form-block">
-                <label>Год выпуска<input type="text" name="year"></label>
-                <label>Цвет<input type="text" name="color"></label>
+                <label>Имя собственности<input type="text" name="name" th:text="name"></label>
+                <label>Государственный номерной знак<input type="text" name="number" th:text="number"></label>
             </div>
             <div class="trusted__form-block">
-                <label>Кузов<input type="text" name="body"></label>
-                <label>Идентификационный номер<input type="text" name="idNumber"></label>
+                <label>Год выпуска<input type="text" name="year" th:text="year"></label>
+                <label>Цвет<input type="text" name="color" th:text="color"></label>
             </div>
-            <label>Срок действия<input type="date" name="date"></label>
+            <div class="trusted__form-block">
+                <label>Кузов<input type="text" name="body" th:text="body"></label>
+                <label>Идентификационный номер<input type="text" name="idNumber" th:text="idNumber"></label>
+            </div>
+            <label>Срок действия<input type="date" name="date" th:text="date"></label>
             <div class="trusted__form-block">
                 <button type="submit" class="button">Принять</button>
                 <button type="reset" class="button">Очистить</button>
