@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,9 +15,9 @@
             Доверенное лицо <br>
             <span>(Кому доверяют)</span>
         </h3>
-        <form action="" class="trusted__form">
-            <label>Доверенное лицо ФИО<input type="text" name="trusted-name"></label>
-            <label>Доверитель ФИО<input type="text" name="truster-name"></label>
+        <form  th:action="@{/trusted}" th:object="${trusted}" method="post" class="trusted__form">
+            <label>Доверенное лицо ФИО<input type="text" name="trustedName"></label>
+            <label>Доверитель ФИО<input type="text" name="trusterName"></label>
             <div class="trusted__form-block">
                 <label>ИНН<input type="text" name="inn"></label>
                 <label>КПП<input type="text" name="kpp"></label>
@@ -34,7 +34,7 @@
             </div>
             <div class="trusted__form-block">
                 <label>Кузов<input type="text" name="body"></label>
-                <label>Идентификационный номер<input type="text" name="id-number"></label>
+                <label>Идентификационный номер<input type="text" name="idNumber"></label>
             </div>
             <label>Срок действия<input type="date" name="date"></label>
             <div class="trusted__form-block">
