@@ -465,26 +465,31 @@ body {font-family: roboto-c, sans-serif;font-size: 16px;background-color: #fff;c
 	font-size: 36px;
 	margin-bottom: 25px;
 }
+
 .trusted__title-big {
 	font-size: 36px;
 }
+
 .trusted__title-big span {
 	font-size: 16px;
 }
 
 .trusted__body {
 	border: 1px solid;
-	padding: 10px;
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
 	align-items: center;
 	width: 650px;
+	padding: 10px 0;
 }
 
 .trusted__form {
+	padding: 10px;
 	display: flex;
+	flex-direction: column;
 	flex-wrap: wrap;
+	gap: 15px;
 }
 .trusted__form label {
 	display: flex;
@@ -492,15 +497,10 @@ body {font-family: roboto-c, sans-serif;font-size: 16px;background-color: #fff;c
 }
 .trusted__form input{
 	border: 1px solid;
-}
-.trusted__form {
-	border: 1px solid;
+	margin-top: 10px;
 }
 
-.trusted__form-radion input{
-	width: 55px;
-	height: 55px;
-	color: #000;
+.trusted__form-block {
+	display: flex;
+	gap: 10px;
 }
-
-.trusted__form-block {}
