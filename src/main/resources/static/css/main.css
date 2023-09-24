@@ -504,3 +504,27 @@ body {font-family: roboto-c, sans-serif;font-size: 16px;background-color: #fff;c
 	display: flex;
 	gap: 10px;
 }
+
+/* СТИЛИ СТРАНИЦЫ КАБИНЕТА */
+.profile {
+	padding-top: 120px;
+
+}
+.profile .header .button {position: relative;z-index: 3;}
+
+.profile__body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.profile__body>:not(:last-child) {
+	margin-bottom: 25px;
+}
+
+.profile__buttons {
+	display: flex;
+	gap: 25px;
+	align-items: center;
+}

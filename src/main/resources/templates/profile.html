@@ -5,14 +5,23 @@
     <title>Title</title>
 </head>
 <body>
-    gggg
-    <form th:action="@{/logout}" th:method="post">
-        <button type="submit">Выход</button>
-    </form>
-
-    <a href="/">На главную</a> <br>
-
-    <a href="/truster">Доверитель</a> <br>
-    <a href="/trusted">Доверенное лицо</a>
+<div class="profile">
+    <header class="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo">One trust</a>
+            <form th:action="@{/logout}" th:method="post" class="button">
+                <button type="submit">Выход</button>
+            </form>
+        </div>
+    </header>
+    <div class="profile__body">
+        <div class="profile__image"><img src="/images/Emblem_of_Kyrgyzstan.svg" alt="Герб"></div>
+        <h2 class="profile__title">Далеко-далеко, за.</h2>
+        <div class="profile__buttons">
+            <a href="/truster" class="button">Доверитель</a>
+            <a href="/trusted" class="button">Доверенное лицо</a>
+        </div>
+    </div>
+</div>
 </body>
 </html>
