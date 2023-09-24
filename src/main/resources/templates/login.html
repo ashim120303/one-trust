@@ -2,17 +2,24 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Trust</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-<form action="/login" method="post">
-    <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
-    EMAIL<input type="text" name="username" required>
-    PASS<input type="password" name="password">
-    <button type="submit" value="Login">Вход</button>
-</form>
-<a href="/register">Рег</a>
-<a href="/">На главную</a>
-
+    <div class="login">
+        <h2 class="login__title">Добро пожаловать!</h2>
+        <form class="login__form" action="/login" method="post">
+            <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+            <label><span>Email</span><input type="text" name="username" required></label>
+            <label><span>Password</span><input type="password" name="password"></label>
+            <button class="login__form-button button" type="submit" value="Login">Вход</button>
+        </form>
+        <div class="login_buttons">
+            <a href="/register" class="login__button button">Зарегистрироваться</a>
+            <a href="/" class="login__button button">На главную</a>
+        </div>
+    </div>
 </body>
 </html>

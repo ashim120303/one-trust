@@ -397,3 +397,56 @@ body {font-family: roboto-c, sans-serif;font-size: 16px;background-color: #fff;c
 	font-size: 14px;
 }
 .footer a:hover {text-decoration: underline;}
+
+
+
+
+/* СТИЛИ СТРАНИЦЫ ЛОГИН */
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 55px;
+}
+
+.login__title {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.login__form {
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+    border: 1px solid #000;
+}
+
+.login__form label {
+    display: flex;
+    gap: 15px
+}
+
+.login__form span {
+    font-weight: 700;
+}
+
+.login__form input {
+    border-bottom: 1px solid #000;
+    width: 100%
+}
+
+.login__form-button {
+    width: fit-content;
+}
+
+.login__buttons {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.login__button {}
