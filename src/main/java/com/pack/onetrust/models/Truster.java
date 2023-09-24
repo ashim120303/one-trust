@@ -1,9 +1,6 @@
 package com.pack.onetrust.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 import java.time.LocalDate;
 
@@ -25,10 +22,21 @@ public class Truster {
     private String body;
     private String idNumber;
     private LocalDate date;
+    @OneToOne
+    @JoinColumn(name = "trusted_id")
+    private Trusted trusted;
 
     // Геттеры и сеттеры для полей (можно сгенерировать автоматически)
 
     // Дополнительные методы, если необходимо
+
+    public Trusted getTrusted() {
+        return trusted;
+    }
+
+    public void setTrusted(Trusted trusted) {
+        this.trusted = trusted;
+    }
 
     public String getTrustedName() {
         return trustedName;
